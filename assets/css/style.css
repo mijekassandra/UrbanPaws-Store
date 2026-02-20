@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+h1, h2
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-primary);
+    font-weight: 700;
+}
+
+p {
+    font-family: var(--font-secondary);
+    font-weight: 400;
+}
+
+:root {
+    /* Colors */
+    --color-primary: #2B2B2B; /* Charcoal - headings, nav text, footer background, icons */
+    --color-accent: #7A9E7E; /* Sage - primary buttons, links, highlights, active states */
+    --color-background: #F4F4F4; /* Off-white - main page background */
+    --color-surface: #FFFFFF; /* White - cards, product boxes, navbar background */
+    --color-secondary-accent: #D6CFC7; /* Sand - borders, dividers, subtle sections, muted tags */
+    --color-muted-text: #6B6B6B; /* Muted text - descriptions, secondary labels */
+    --color-error: #C96B6B; /* Error/Sale - sale badge or form errors (use sparingly) */
+
+    
+    /* Typography */
+    --font-primary: "Poppins", sans-serif;
+    --font-secondary: "Inter", sans-serif;
+    --font-size-small: 14px;
+    --font-size-base: 16px;
+    --font-size-large: 18px;
+    --font-size-h1: 3.5rem;
+    --font-size-h2: 2.8rem;
+    --font-size-h3: 2rem;
+    --font-size-h4: 1.4rem;
+    
+    /* Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+    --spacing-xxl: 4rem;
+    --spacing-xxxl: 5rem;
+    
+    /* Layout */
+    --container-width: 1200px;
+    --container-padding: 1rem;
+    --container-padding-x: 8rem; /* Horizontal padding for header, footer, and main containers */
+    
+    /* Transitions */
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+    --transition-slow: 0.5s ease;
+}
+
+
+/*Main styles --------------------------------------- */
+
+
+
+
+/* Header styles --------------------------------------- */
+
+header {
+    background-color: var(--color-surface);
+    width: 100%;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-xs) var(--container-padding-x);
+    width: 100%;
+}
+
+.header-logo-image {
+    width: 100px;
+    height: auto;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-lg);
+}
+
+.header-nav-list {
+    display: flex;
+    gap: var(--spacing-md);
+}
+
+.header-nav-item {
+    font-family: var(--font-primary);
+    font-weight: 500;
+    color: var(--color-primary);
+}
+
+.header-nav-item:hover {
+    color: var(--color-accent);
+}
+
+
+
+/* Footer styles --------------------------------------- */
+
+footer {
+    background-color: var(--color-primary);
+    color: var(--color-surface);
+    padding: 1rem var(--container-padding-x) ;
+}
+
+.footer-content {
+    text-align: center;
+}
+
+/* .Body Style ----------------------------------------------- */
+
+.main-container {
+    padding: 1rem var(--container-padding-x) ;
+    width: 100%;
+}
+
+.hero {
+    background-color: var(--color-surface);
+    padding: var(--spacing-lg) 0;
+}
